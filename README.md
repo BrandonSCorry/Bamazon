@@ -17,7 +17,7 @@
 1. Next, you'll be prompted to enter the quantity of item you'd like to purchase. If successful, you'll be notified of the total cost of your purchase. In the example below, I'm purchasing 3 sets of 32GB ram for $3000.  
   ![Third instruction](/images/3rd_instruction.png)
   
-1. After a few moments, you'll be prompted to Return to the Bamazon Store or exit the app. Enter 1 to return to store, and enter 2 to exit.  
+1. After a few moments, you'll be prompted to Return to the Bamazon Store or exit the app. Enter 1 to return to store, or enter 2 to exit.  
   ![Fourth instruction](/images/4th_instruction.png)
 
 
