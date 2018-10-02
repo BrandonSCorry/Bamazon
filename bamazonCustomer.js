@@ -72,18 +72,27 @@ inquirer
       "SELECT * FROM products WHERE item_id = ?", [parseInt(input.itemId)],
       function(err, res) {
 
-        // get DB stock quantity, easier way to do this?
-
-        Object.keys(res).forEach(function(key) {
-
-          let match = res[key];
+        // get DB stock quantity, check against user input and return success if there's sufficient quantity. else : fail message
+        res.forEach((match) => {
 
           const isInStock = match.stock_quantity >= input.quantity;
 
           //conditional statement - if we have enough stock_quantity or not
           const checkStock = isInStock? updateDB(input, match) : notEnoughStock(input, match);
-
         });
+
+
+
+        // Object.keys(res).forEach(function(key) {
+        //
+        //   let match = res[key];
+        //
+        //   const isInStock = match.stock_quantity >= input.quantity;
+        //
+        //   //conditional statement - if we have enough stock_quantity or not
+        //   const checkStock = isInStock? updateDB(input, match) : notEnoughStock(input, match);
+        //
+        // });
 
       }
     );
