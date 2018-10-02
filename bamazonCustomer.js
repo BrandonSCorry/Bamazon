@@ -53,7 +53,7 @@ inquirer
       type: "input",
       message: "Enter the ID number of the product you wish to buy:",
       validate: function(value) {
-        return (isNaN(value) || value > 10 || value == "") === false;
+        return (isNaN(value) || value > 10 || value < 0 || value == "") === false;
 
       }
     },
@@ -62,7 +62,7 @@ inquirer
       type: "input",
       message: "How many of these would you like to buy?",
       validate: function(value) {
-        return (isNaN(value) || value == "") === false;
+        return (isNaN(value) || value <= 0 ||value == "") === false;
       }
     }
   ])
