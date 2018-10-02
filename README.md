@@ -6,7 +6,7 @@
 ##### Run the application in the command line after installing the npm modules and creating the MySQL DB from the schema.sql file
 
 
-1. You will first be shown a list of products from the bamazon database:\
+1. You will first be shown a list of products from the bamazon database:\\
   ![First instruction](/images/1st_instruction.png)
   
 1. You will be prompted to enter the  ID for the item you want to purchase. The ID's are highlighted below\
