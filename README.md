@@ -1,6 +1,8 @@
 # Bamazon
 #### A store app on the command line
 
+##### using node.js, mysql, and inquirer to read and update a products database through command prompts.
+
 ### User Guide
 
 ##### Run the application in the command line after installing the npm modules and creating the MySQL DB from the schema.sql file
