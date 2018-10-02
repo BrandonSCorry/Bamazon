@@ -19,7 +19,7 @@ const connection = mysql.createConnection({
 // mysql DB connection
 connection.connect(function(err) {
   if (err) throw err;
-  // run the start function after the connection is made to prompt the user
+  // run the start function after the connection is made to prompt the user and get DB values
   showDB();
 });
 
