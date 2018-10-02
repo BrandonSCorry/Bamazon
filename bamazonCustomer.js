@@ -143,7 +143,7 @@ function reset() {
       choices: ["Return to Bamazon", "Exit"]
     })
     .then(function(input) {
-      // based on their answer, either call the bid or the post functions
+      //if picked return showDB again if not, exit
       if (input.restart.toUpperCase() === "RETURN TO BAMAZON") {
         showDB();
       }
