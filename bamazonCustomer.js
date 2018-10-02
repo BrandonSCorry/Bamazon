@@ -33,7 +33,7 @@ function showDB() {
 
 
     res.forEach((product) => {
-      console.log(product.item_id + " | " + product.product_name + " | " + product.department_name + " | $" + product.price + " | " + product.stock_quantity);
+      console.log(" " + product.item_id + " | " + product.product_name + " | " + product.department_name + " | $" + product.price + " | " + product.stock_quantity);
       console.log("---------------------------------------------------------");
     });
 
@@ -108,7 +108,7 @@ function updateDB (input, match) {
       }
     ],
     function(err, res) {
-      console.log("Purchase successful! Total cost: $" + (match.price * input.quantity));
+      console.log("\nPurchase successful! Total cost: $" + (match.price * input.quantity));
      }
   );
 
