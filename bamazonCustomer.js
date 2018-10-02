@@ -113,7 +113,7 @@ function updateDB (input, match) {
         stock_quantity: parseInt(match.stock_quantity - input.quantity)
       },
       {
-        item_id: input.itemId
+        item_id: parseInt(input.itemId)
       }
     ],
     function(err, res) {
