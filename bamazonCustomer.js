@@ -143,31 +143,3 @@ function reset() {
       }
     });
 }
-
-
-
-// let getIdInput;
-//
-// const IdMatch = res.item_id === parseInt(input.itemId);
-// console.log(res.item_id + "item ID from DB");
-// console.log(parseInt(input.ItemID) + "user input ID");
-// res.forEach((product, i) => {
-//   let isIdMatch = IdMatch ? parseInt(getIdInput) = product.item_id + console.log("Match!") : console.log("No Match" + i);
-//   console.log("ID: " + product.item_id + " input ID: " + parseInt(getIdInput));
-// });
-
-// take inquirer input and use to update DB
-// connection.query(
-//   "UPDATE products SET quantity=quantity - (quantity_Input WHERE item_id=parseInt('item_id_Input')",
-//   {
-//     item_name: input.item,
-//     category: answer.category,
-//     starting_bid: answer.startingBid,
-//     highest_bid: answer.startingBid
-//   },
-//   function(err, res) {
-//     if (err) throw err;
-//
-//
-//   }
-// );
