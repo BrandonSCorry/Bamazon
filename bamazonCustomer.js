@@ -26,7 +26,7 @@ connection.connect(function(err) {
 
 // function to show DB & query user at start
 function showDB() {
-  var query = connection.query("SELECT * FROM products ORDER BY item_id ASC", function(err, res) {
+  let query = connection.query("SELECT * FROM products ORDER BY item_id ASC", function(err, res) {
     console.log("\nBamazon Product List\n");
     console.log(" ID | Item | Category |  $  |  Quantity");
     console.log("-------------------------------------------------");
@@ -53,7 +53,7 @@ inquirer
       type: "input",
       message: "Enter the ID number of the product you wish to buy:",
       validate: function(value) {
-        return (isNaN(value) || value > 10 || value < 0 || value == "") === false;
+        return (isNaN(value) || value > 10 || value <= 0 || value == "") === false;
 
       }
     },
@@ -68,7 +68,7 @@ inquirer
   ])
   .then(function(input) {
 
-    var query = connection.query(
+    let query = connection.query(
       "SELECT * FROM products WHERE item_id = ?", [parseInt(input.itemId)],
       function(err, res) {
 
@@ -106,7 +106,7 @@ inquirer
 
 function updateDB (input, match) {
 
-  var query = connection.query(
+  let query = connection.query(
     "UPDATE products SET ? WHERE ?",
     [
       {
